@@ -1,0 +1,106 @@
+/*** Simple reset ***/
+:root {
+    font-size: 62.5%; /*fonte padrão 10px*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+
+
+/*** fim reset **/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;600;700&display=swap');
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    
+}
+
+main{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+figure{
+    position: absolute;
+    z-index: 1;
+}
+img {
+    height: 29rem;
+    translate: -20%;
+}
+
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65.5rem;
+    /* height: 35rem; */
+    background-color: #fff;
+    position: relative;
+    border-radius: 2.1rem;
+    padding: 8rem 5rem 8rem 25rem;
+}
+
+details{
+    padding: 1.5rem 0;    
+}
+
+details summary {
+    list-style: none;
+    width: 40rem;
+}
+ details summary::after {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    content: "▶" ;
+    display: inline-block; 
+    width: 2rem;
+    margin: 0 2rem;
+    z-index: 99;
+}
+details[open] summary::after {
+    content: "▼" ;
+    display: inline-block; 
+    width: 2rem;
+    margin: 0 2rem;
+    z-index: 99;
+    color: red; 
+} 
+
+
+h1{   
+    font-family: 'Roboto', sans-serif;;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+summary { 
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.7rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 3;
+}
+p { 
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
