@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Map, Filter e Reduce</title>
+</head>
+
+<body>
+    <h1>Filter Map e reduce</h1>
+    <p>Hoje vamos ver e entender o conceito de Map, Filter e Reduce</p>
+    <p><span>Filter: </span>função que percorre uma lista e cria uma nova lista contendo apenas os elementos que atendem
+        a uma determinada condição.</p>
+    <p><span>Map: </span>função que percorre cada elemento de uma lista e cria uma nova lista com os resultados de uma
+        operação realizada em cada elemento</p>
+    <p><span>Reduce: </span> função que percorre uma lista e realiza uma operação acumulativa nos elementos, resultando
+        em um <b>único</b> valor de saída.</p>
+    <p>Vamos imaginar o seguinte array:</p>
+    <div>
+        <h3>Array Inicial</h3>
+        <div id="array" class="demonstracao"></div>
+    </div>
+    <div>
+        <h3>Filter</h3>
+        <code>filterArray = arr.filter(e=>e>4)</code>
+        <div id="filter" class="demonstracao"></div>
+    </div>
+    <div>
+        <h3>Map</h3>
+        <code>arr.map((e)=>e*10)</code>
+        <div id="map" class="demonstracao"></div>
+    </div>
+    <div>
+        <h3>Reduce</h3>
+        <code>arr.reduce((count, e) => count+=e,0);</code>
+        <div id="reduce" class="demonstracao"></div>
+    </div>
+    <script src="script.js" defer></script>
+
+
+    </table>
+</body>
+
+</html>
