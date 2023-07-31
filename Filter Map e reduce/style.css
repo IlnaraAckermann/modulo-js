@@ -5,6 +5,7 @@ div.demonstracao{
     padding: 2rem;
     flex-wrap: wrap;
     width: 27rem;
+    min-height: 11rem;
 }
 
 div.item{
@@ -18,9 +19,14 @@ div.item{
     border-radius: 5px;
 }
 
-body{
+.amostra {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    max-width:100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
 
+span {
+    font-weight: 900;
+}

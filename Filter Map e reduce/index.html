@@ -18,29 +18,32 @@
     <p><span>Reduce: </span> função que percorre uma lista e realiza uma operação acumulativa nos elementos, resultando
         em um <b>único</b> valor de saída.</p>
     <p>Vamos imaginar o seguinte array:</p>
-    <div>
-        <h3>Array Inicial</h3>
-        <div id="array" class="demonstracao"></div>
-    </div>
-    <div>
-        <h3>Filter</h3>
-        <code>filterArray = arr.filter(e=>e>4)</code>
-        <div id="filter" class="demonstracao"></div>
-    </div>
-    <div>
-        <h3>Map</h3>
-        <code>arr.map((e)=>e*10)</code>
-        <div id="map" class="demonstracao"></div>
-    </div>
-    <div>
-        <h3>Reduce</h3>
-        <code>arr.reduce((count, e) => count+=e,0);</code>
-        <div id="reduce" class="demonstracao"></div>
-    </div>
-    <script src="script.js" defer></script>
 
+    <div class="amostra">
+        
+        <div >
+            <h3>Array Inicial</h3>
+            <code>let arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]</code>
+            <div id="array" class="demonstracao"></div>
+        </div>
+        <div>
+            <h3>Filter</h3>
+            <code>filterArray = arr.filter(e=>e>4)</code>
+            <div id="filter" class="demonstracao"></div>
+        </div>
+        <div>
+            <h3>Map</h3>
+            <code>arr.map((e)=>e*10)</code>
+            <div id="map" class="demonstracao"></div>
+        </div>
+        <div>
+            <h3>Reduce</h3>
+            <code>arr.reduce((count, e) => count+=e,0);</code>
+            <div id="reduce" class="demonstracao"></div>
+        </div>
+    
+    </div>
 
-    </table>
+    <script src="script.js" defer></script>  
 </body>
-
 </html>
