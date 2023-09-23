@@ -25,3 +25,11 @@ let reduceArray = arr.reduce((count, e) => count+=e,0);
 
 
     reduce.innerHTML +=`<div class="item"> ${reduceArray} </div>`    
+   
+
+
+    
+console.log(false === 0); // imprime "true"
+
+
+
