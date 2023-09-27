@@ -183,3 +183,115 @@ verificarPrimo(1);
 verificarPrimo(2);
 verificarPrimo(10);
 verificarPrimo(11);
+
+
+
+function popularArrayIncrementandoUm(array, total){
+	for (let i = 0; i<=total; i++){
+		array.push(i);
+	}
+}
+
+function getRandomInt(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+function popularRandom(array, total, min, max){
+	for (let i = 0; i<=total; i++){
+		array.push(getRandomInt(min, max));
+	}
+}
+
+const a = []
+popularRandom(a, 50, 0, 15854)
+console.log(a)
+
+function verificaParImpar(total){
+	const array = []
+	popularArrayIncrementandoUm(array, 10)
+	for (element in array){
+		if (+element === 0){
+			console.log("O Numero é 0");
+		} else if (element%2 === 0){
+			console.log(`o numero ${element} é par`);
+		} else {
+			console.log(`o numero ${element} é impar`);
+		}
+	}
+}
+verificaParImpar(10)
+
+
+
+const arrayNegativo = [0, -10, -1, 3, 7, -50];
+let negativos = [];
+for (let i = 0; i < arrayNegativo.length; i++) {
+	const element = arrayNegativo[i];	
+	if (element<0) {
+		console.log(`Opa ${element} é negativo!`)
+		negativos.push(element)
+	}	
+}
+console.log (`Temos ${negativos.length} numeros negativos`)
+console.log(negativos);
+
+
+const arrayPrimos = [1,3,5,8,777, 169, 88, 13];
+const nPrimos = [];
+function verificarPrimoBollean(num) {
+	let contador = 2;
+	let ehPrimo = true;
+	while (contador < num) {
+		if (num % contador === 0) {
+			ehPrimo=false;
+			break
+		}
+		contador++;
+	}
+	return ehPrimo
+}
+
+for (const item of arrayPrimos) {
+ if (verificarPrimoBollean (item)) {
+	nPrimos.push(item)
+ }
+	
+}
+console.log(nPrimos)
+
+const folgas = [
+	"quinta-Feira",
+	"Sexta-feira",
+	"sábado",
+	"Domingo",
+	"segunda",
+	"quarta",
+	"Quarta-feira",
+  ];  
+ function capitalizeFolgas(folgas) {
+	folgasMaiscula=[]
+for (const folga of folgas ){
+	const primeiraLetra = folga[0].toUpperCase()
+	const resto=folga.slice(1)
+	folgaCorrijida=primeiraLetra+resto
+	folgasMaiscula.push(folgaCorrijida)
+}
+
+return folgasMaiscula
+}
+folgasMaiscula= capitalizeFolgas(folgas)
+console.log(folgasMaiscula)
+
+
+
+
+const feedbacks = [
+	"Melhorar responsividade do site",
+	"Erros confusos",
+	"Os botões são intuitivos",
+	"Erros confusos",
+  ];
+
+ 
